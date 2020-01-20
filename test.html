@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <style>
+    .aaa {
+    color:#F00;
+}
+.button {
+    padding: 5px 10px;
+    border:#666 solid 1px;
+    background:#FFF;
+    display:block;
+    width:100px;
+    text-align:center;
+    cursor:pointer;
+}
+.bbb {
+    font-weight:900;
+    font-size:24px;
+    color:#00F;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <p id="q02">ときどきweb</p>
+    <p id="q03"></p>
+    <p id="q04">エレン</p>
+    <p id="q05">ときどきweb</p>
+    <ul id="q6">
+            <li>リスト1</li>
+            <li>リスト2</li>
+            <li>リスト3</li>
+        </ul>
+        <ul id="q07">
+                <li>リスト1</li>
+                <li>リスト2</li>
+                <li>リスト3</li>
+            </ul>
+            <div class="button">ボタン</div>
+            <p id="q10" class="aaa">めんま、</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        // TODO: ここにjQueryサンプルかく
+        $(function() {
+            $('#q02').css({
+                "color":"blue",
+                "background-color":"yellow"
+            });
+            $('#q03').text("エレン");
+            $('#q04').text("駆逐してやるっ");
+            $('#q05').html('<a href="test">test</a>');
+            $('#q6').addClass('aaa');
+            $('#q07').hide();
+            $('.button').click(function() {
+                alert('クリックしますた');
+            });
+            $('#q10').click(function() {
+                $('#q10').removeClass('aaa').addClass('bbb');
+            });
+        });
+    </script>
+  </body>
+</html>
